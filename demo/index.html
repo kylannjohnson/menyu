@@ -9,16 +9,36 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <title>menyu-element Demo</title>
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="../menyu-element.html">
-  </head>
-  <body>
+</head>
 
-    <p>An example of <code>&lt;menyu-elementt&gt;</code>:</p>
+<body unresolved`>
+    <p>An example of <code>&lt;menyu-element&gt;</code>:</p>
+    <menyu-element>
+        <div id="base">
+            <div>
+                <a href="#">One</a>
+                <menyu-group>
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </menyu-group>
+            </div>
+            <div><a href="#">Two</a></div>
+            <div><a href="#">Three</a></div>
+            <menyu-group>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+            </menyu-group>
+        </div>
+    </menyu-element>
+</body>
 
-  </body>
 </html>

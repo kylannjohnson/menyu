@@ -13,14 +13,15 @@
   ],
   "main": "se-slide.html",
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/kylannjohnson/seed-element/",
+  "homepage": "https://github.com/kylannjohnson/menyu-element/",
   "ignore": [
     "/.*",
     "/test/",
     "/demo/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.0.0"
+    "polymer": "Polymer/polymer#^1.0.0",
+    "neon-elements": "PolymerElements/neon-elements#~1.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

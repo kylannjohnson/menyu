@@ -1,0 +1,29 @@
+<link rel="import" href="../polymer/polymer.html">
+<limk rel="import" href="../polymer/neon-animation/neon-animation">
+<dom-module id="menyu-group">
+    <style>
+    :host {
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+    }
+    </style>
+    <template>
+        <content></content>
+    </template>
+</dom-module>
+<script>
+Polymer({
+    is: "menyu-group",
+    behaviors: [
+        Polymer.NeonAnimationRunnerBehavior
+    ],
+    ready: function() {
+        var subgroup = this.querySelector('menyu-group');
+
+        moveLeft(subgroup);
+
+    }
+})
+</script>
